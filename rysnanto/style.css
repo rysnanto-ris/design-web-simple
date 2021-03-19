@@ -1,0 +1,167 @@
+/*font*/
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+
+
+/* navbar */
+.navbar{
+	position: relative;
+	z-index: 1;
+}
+.navbar-brand{
+	color: black !important;
+	font-family: 'Viga', sans-serif;
+
+}
+.nav-link{
+	margin-right: 40px;
+	
+}
+
+
+
+
+/* hero web*/
+.jumbotron{
+	background-image: url("images/bg5.jpg");
+	background-size: cover;
+	height: 450px;
+	position: relative;
+
+}
+
+.jumbotron .container{
+	z-index: 1;
+	position: relative;
+}
+.jumbotron::after{
+	content: '';
+	display:block;
+	height: 70%;
+	width:100%;
+	position: absolute;
+	bottom: 0;
+	background-image: linear-gradient(to top , rgba(0,0,0,5) , rgba(0,0,0,0));
+}
+
+.jumbotron .display-4 , h1{
+	color: white;
+	font-size: 40px;
+	text-align: center;
+	font-family: 'Indie Flower', cursive;
+	margin-top: 150px;
+
+}
+.jumbotron p{
+	font-size: 20px;
+	text-align:center;
+	color: white;
+}
+.jumbotron .tombol{
+ 	margin-top: 20px;
+ 	padding: 5px 40px 5px 40px;
+}
+
+/*info blog*/
+
+.info{
+	box-shadow: 0 3px 20px rgba(0,0,0,0.5);
+	border-radius: 20px;
+	margin-top: -60px;
+	background-color: white;
+	padding:20px;
+
+}
+.info img{
+	width: 70px;
+	height: 70px;
+	margin-right: 40px;
+	margin-bottom: 30px;
+	margin-top:30px;
+}
+
+.info h3{
+	font-size: 20px;
+	margin-top:35px;
+	
+}
+
+/*judul*/
+h4{
+	margin-top: 50px;
+	padding-left: 200px;
+}
+
+/*artikel*/
+
+.col h1{
+	color: black;
+}
+
+.bg-gakroh{
+	background-color: #0099ff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* tampilan dekstop*/
+@media (min-width: 992px) { 
+
+.nav-link:hover::after{
+	content: '';
+	display: block;
+	border-bottom: 3px solid blue;
+	width: 30%;
+	margin: auto;
+	padding-bottom: 5px;
+	margin-bottom: -8px;
+
+}
+
+.navbar-brand,.nav-link{
+	color: white !important;
+	padding-top: 20px;
+	text-transform: uppercase;
+
+}
+
+.jumbotron{
+	margin-top: -80px;
+	height: 550px;
+}
+
+h4{
+	margin-top: 50px;
+	padding-left: 100px;
+}
+.post-body pre {
+  background-color: #292E34; /* warna background */
+  border-left: 5px solid #008c5f; /* variasi border kiri */
+  padding:0; margin:.5em auto; white-space:pre; word-wrap:break-word; overflow:auto; position:relative; width:100%; -moz-tab-size:2; -o-tab-size:2; tab-size:2; word-break:normal; user-select:text; -webkit-user-select:text; -khtml-user-select:text; -moz-user-select:text; -ms-user-select:text; user-select:text; -webkit-hyphens:none; -moz-hyphens:none; -ms-hyphens:none; hyphens:none
+}
+.post-body pre code {
+  color: #BFBF90; /* warna huruf */
+  font-size: 12px; /* ukuran huruf */ 
+  max-height:250px; line-height:1.5em; display:block; background:none; border:none; padding:10px 15px; font-family:'source code pro',menlo,consolas,monaco,monospace; white-space:pre-wrap; overflow:auto; user-select:text; -webkit-user-select:text; -khtml-user-select:text; -moz-user-select:text; -ms-user-select:text; user-select:text
+}
+
+}
